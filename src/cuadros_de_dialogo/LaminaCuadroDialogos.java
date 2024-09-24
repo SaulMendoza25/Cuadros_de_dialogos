@@ -1,7 +1,6 @@
 package cuadros_de_dialogo;
 
 import java.awt.BorderLayout;
-
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -107,7 +106,7 @@ public class LaminaCuadroDialogos extends JPanel {
 	private ArrayList<Object> getObjects() {
 		ArrayList<Object> objetos = new ArrayList<Object>();
 		String cadena = "Esto es una cadena de texto";
-		ImageIcon imagen = new ImageIcon("bin/images/icons/paleta_de_color.png");
+		ImageIcon imagen = new ImageIcon("src/images/paleta_de_color.png");
 		JTextField componente_con_Color = new JTextField(10);
 		componente_con_Color.setBackground(Color.YELLOW);
 		LocalDateTime locaDate = LocalDateTime.now();
@@ -170,9 +169,9 @@ public class LaminaCuadroDialogos extends JPanel {
 
 	private void getTypeOption(String arg) {
 		String numbers[] = { "Uno", "Dos", "Tres" };
-		ImageIcon icons[] = { new ImageIcon("bin/images/icons/red.png"), new ImageIcon("bin/images/icons/cyan.png"),
-				new ImageIcon("bin/images/icons/green.png") };
-		Object[] arrayObjetos = { new ImageIcon("bin/images/icons/paleta_de_color.png"), new JTextField(10),
+		ImageIcon icons[] = { new ImageIcon("src/images/red.png"), new ImageIcon("src/images/cyan.png"),
+				new ImageIcon("src/images/green.png") };
+		Object[] arrayObjetos = { new ImageIcon("src/images/paleta_de_color.png"), new JTextField(10),
 				"Esto es una cadena de texto" };
 		switch (arg) {
 		case "String[]": {
